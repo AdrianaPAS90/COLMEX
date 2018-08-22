@@ -1,0 +1,40 @@
+\documentclass[11pt,spanish,letterpaper]{article}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[latin1]{inputenc}
+\usepackage{babel}
+\usepackage{picture}
+\usepackage{url}
+\usepackage{mathrsfs}
+\usepackage{amssymb,amsthm,amsmath,latexsym}
+\usepackage[round]{natbib}
+\usepackage{fancyhdr}
+\theoremstyle{plain}
+\newtheorem{teo}{Teorema}
+\newtheorem{prop}[teo]{Proposicion}
+\newtheorem{defi}[teo]{Definicion}
+\newtheorem{obs}[teo]{Observacion}
+\newtheorem{lem}[teo]{Lema}
+\newtheorem{cor}[teo]{Corolario}
+\usepackage[pdftex]{color,graphicx}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\setlength{\textwidth}{12.6cm}
+\setlength{\textheight}{19cm}
+\begin{document}
+\begin{flushleft}
+Adriana P\'erez-Arciniega Sober\'on
+\end{flushleft}
+\begin{center}
+\textbf{The Development and use of Demographic Models}
+\end{center} 
+De acuerdo a \cite{coale1996development}, la demograf\'ia es una disciplina que se presta al uso de modelos debido a que las dimensiones y eventos que la conforman son de caracter num\'erico. Estos modelos toman en cuenta, no solo los eventos demogr\'aficos y el riesgo de una poblaci\'on de estar expuesto a ellos sino tambi\'en su desarrollo en el tiempo. La dimensi\'on temporal se puede ver de dos maneras, pensando en la relaci\'on entre tiempo y edad: una poblaci\'on transversal, donde la poblaci\'on tiene distintas edades al mismo tiempo o bien, una cohorte, donde los miembros de la poblaci\'on tienen edad cero al mismo tiempo y van creciendo juntos. La importancia de modelo para la demograf\'ia es la precisi\'on con la cual se pueda explotar la investigaci\'on emp\'irica y la capacidad para predecir tendencias futuras cuando no se cuenta con suficientes datos.\\
+\\
+Uno de los modelos cl\'asicos en demograf\'ia son las tablas de vida, en las cuales se contabilizan los nacimientos y muertes por cohorte en una poblaci\'on cerrada (no susceptible a migraci\'on), dando as\'i las probabilidades de supervivencia de dicha cohorte a una determinada edad. En las poblaciones estables, con tasas fijas de mortalidad y con una tasa continua de nacimientos resulta en una poblaci\'on que no cambia en su estructura por edad. Es decir, que en una poblaci\'on cerrada, hay una relaci\'on entre la estructura de edad al tiempo $t$, tasas de mortalidad espec\'ificas al tiempo $t$ y tasas de crecimiento espec\'ificas al tiempo $t$.\\
+\\
+Los modelos descritos en el art\'iculo tambi\'en incluyen modelos matem\'aticos de nacimientos, en el cual se desarrolla el intervalo de nacimientos; el modelo de tasas de mortalidad, donde se exploran la mortalidad en distintas edades como un patr\'on; modelos de tasas de nupcialidad, igualmente se trata de encontrar patrones de la primera uni\'on en las distintas edades; modelos de tasas de fecundidad, aqu\'i se asocian los patrones de fecundidad en mujeres unidas para poder estimar la fecundidad y mortalidad de poblaciones que tienen poca informaci\'on. De manera aparte se consideran los modelos de tasas de migraci\'on, estos han sido menos recurrentes en la literatura debido a que a diferencia de otros procesos demogr\'aficos, este no tiene ning\'un fundamento biol\'ogico.\\
+\\
+Todos los modelos se utilizan para poder inferir la evoluci\'on futura de las poblaciones. Finalmente, se describen las caracter\'isticas de los modelos: los modelos demogr\'aficos sirven para describir comportamientos, no para formular teor\'ias; los comportamientos que se describen son agregados, no se describen comportamientos individuales. Los modelos son una expresi\'on matem\'atica de la realidad ; sin embargo, han ca\'ido en desuso con el incremento en la disposici\'on de informaci\'on de las encuestas m\'as detalladas, aunque persiste el uso de t\'ecnicas estad\'isticas para explotarlas. 
+\bibliographystyle{apalike}
+\bibliography{bib_COLMEX}
+\end{document}
