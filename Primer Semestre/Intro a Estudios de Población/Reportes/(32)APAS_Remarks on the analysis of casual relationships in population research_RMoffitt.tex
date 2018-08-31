@@ -1,0 +1,45 @@
+\documentclass[11pt,spanish,letterpaper]{article}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[latin1]{inputenc}
+\usepackage{babel}
+\usepackage{picture}
+\usepackage{url}
+\usepackage{mathrsfs}
+\usepackage{amssymb,amsthm,amsmath,latexsym}
+\usepackage[round]{natbib}
+\usepackage{fancyhdr}
+\theoremstyle{plain}
+\newtheorem{teo}{Teorema}
+\newtheorem{prop}[teo]{Proposicion}
+\newtheorem{defi}[teo]{Definicion}
+\newtheorem{obs}[teo]{Observacion}
+\newtheorem{lem}[teo]{Lema}
+\newtheorem{cor}[teo]{Corolario}
+\usepackage[pdftex]{color,graphicx}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\setlength{\textwidth}{12.6cm}
+\setlength{\textheight}{19cm}
+\begin{document}
+\begin{flushleft}
+Adriana P\'erez-Arciniega Sober\'on
+\end{flushleft}
+\begin{center}
+\textbf{Remarks on the analysis of casual relationships in population research}
+\end{center}
+El art\'iculo de \cite{moffitt2005remarks},argumenta que a diferencia de otros ciencias sociales, la demograf\'ia no se ha ocupado de establecer relaciones causales en sus objetos de estudio. Sin embargo, recientemente se est\'an estableciendo l\'ineas de investigaci\'on que tienen una dimensi\'on causal. Sin embargo, es importante distinguir que en un an\'alisis descriptivo que utilizan m\'etodos de regresi\'on para estimar medias condicionales no se malinterprete con una relaci\'on causal.\\
+\\
+El estudio causal comienza con el planteamiento de que cada individuo $i$ tiene dos resultados posibles: $Y_{1i}$ y $Y_{0i}$, donde $Y_{1i}$ es la experiencia individual derivado de una acci\'on particular y $Y_{0i}$ es el resultado de no haber realizado esa acci\'on y todo lo dem\'as se mantiene constante. De este modo, se puede interpretar el modelo de regresi\'on lineal como un modelo de causalidad si as\'i se eligen  las variables dependientes e independientes. Igualmente, en el an\'alisis causal deben postularse supuestos o restricciones para determinar al agente principal que experimenta el resultado o la ausencia del mismo derivado de la acci\'on cr\'itica.\\
+\\
+Al realizar an\'alisis causal es crucial identificar que un fen\'omeno puede estar generado por varias razones simult\'aneas, esto se puede resolver mediante el uso de variables auxiliares o ecuaciones simult\'aneas de cada una de la razones. Anal\'iticamente, se designan dos ecuaciones de regresi\'on lineal que especifican las relaciones:
+\begin{align*}
+Y_i = \alpha + \beta_i T_i + \gamma X_i + \epsilon_i\\
+T_i=\delta+\Theta X_i + \Phi Z_i+\nu_i
+\end{align*}
+Donde la variable $Z$ es una variable ex\'ogena sobre la cual agente tiene el control y que afecta la probabilidad de experimentar el evento pero no afecta el resultado $Y_i$. Con esta variable se evidenc\'ia el intercambio que tiene que realizar el investigador entre la validez externa e interna del modelo. La validez interna se refiere a cuando el experimento no est\'a sesgado por la poblaci \'on en la cual se realiz\'o el experimento y la validaci\'on externa es cuando el resultado estimado se generaliza para una poblaci\'on m\'as grande.\\
+\\
+En conclusi\'on, al tratar de realizar an\'alisis de causalidad se deben de usar m\'as de un m\'etodo pues cualquiera de los m\'etodos tradicionales tienen objeciones. Como mencionado anteriormente, se debe mantener el equilibrio entre maximizar la validez interna y externa, lo cual provocar\'ia un campo de problemas espec\'ificamente definidos que no aportan al conocimiento general.
+\bibliographystyle{apalike}
+\bibliography{bib_COLMEX}
+\end{document}
